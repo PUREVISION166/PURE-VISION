@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pure Vision - Travel Agent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2f3e46;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #ff8c00;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1577991818526-17b961925d2b') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2f3e46;
+    }
+    .services, .hotels, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px;
+      background-color: #2f3e46;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff8c00;
+    }
+    footer {
+      background: #2f3e46;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- Add your logo here -->
+      <h2>Pure Vision</h2>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#hotels">Hotels</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Explore Bhutan with Pure Vision</h1>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width: 800px; margin:auto;">Pure Vision is a dedicated travel agency based in Bhutan, offering authentic and meaningful travel experiences. With a focus on culture, nature, and personalized service, we help you discover the true beauty of Bhutan.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">Cultural Tours</div>
+      <div class="card">Trekking Adventures</div>
+      <div class="card">Custom Itineraries</div>
+      <div class="card">Transportation & Guides</div>
+    </div>
+  </section>
+
+  <section id="hotels">
+    <h2>Recommended Hotels</h2>
+    <div class="hotels">
+      <div class="card">Hotel Druk, Thimphu</div>
+      <div class="card">Le Meridien, Paro</div>
+      <div class="card">Zhiwa Ling, Punakha</div>
+      <div class="card">Dewachen Resort, Gangtey</div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="card">Image 1</div>
+      <div class="card">Image 2</div>
+      <div class="card">Image 3</div>
+      <div class="card">Image 4</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pure Vision Travel Agency. All rights reserved.</p>
+  </footer>
+</body>
+</html>
